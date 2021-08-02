@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+div#wrap {
+  width: 1200px;
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 10px auto;
+}
+
+div#headerLogo {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #08f;
+
+  float: left;
+}
+
+nav#gnb {
+  width: 960px;
+  height: 100px;
+  border: 1px solid #08f;
+
+  padding-top: 59px;
+  padding-left: 320px;
+
+  float: right;
+}
+
+#gnb ul#mainMenu {
+  width: 620px;
+  /* border: 4px solid #000; */
+}
+
+#gnb ul#mainMenu > li.mainLi {
+  float: left;
+}
+
+#gnb a {
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+
+#gnb .mainLi > a {
+  border: 1px solid #aaa;
+}
+
+#gnb .subMenu {
+  position: absolute;
+  display: none;
+
+  z-index: 1;
+}
+
+#gnb .subLi > a {
+  border: 1px solid rgba(0, 136, 255, 0);
+}
+
+/* 하이라이트 효과 시작 */
+#gnb .mainLi:hover > a {
+  color: #fff;
+  background-color: rgba(0, 136, 255, 0.8);
+}
+
+#gnb .subLi a {
+  color: #fff;
+  background-color: rgba(0, 136, 255, 0);
+}
+
+#gnb .subLi a:hover {
+  color: #333;
+  background-color: #fff;
+}
+/* 하이라이트 효과 끝 */
+
+/* div#subMenuBGFrame 시작 */
+div#subMenuBGFrame {
+  clear: both;
+  position: relative;
+}
+
+div#subMenuBG {
+  width: 1178px;
+  height: 160px;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 136, 255, 0.6);
+  background-color: rgba(0, 136, 255, 0.6);
+
+  position: absolute;
+}
+/* div#subMenuBGFrame 끝 */
